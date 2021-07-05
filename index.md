@@ -11,8 +11,6 @@ July 8, 2021
     -   [Preferred Reporting Items for Systematic Reviews and
         Meta-Analyses
         (PRISMA)](#preferred-reporting-items-for-systematic-reviews-and-meta-analyses-prisma)
-    -   [Pre-registry for Systematic
-        Reviews](#pre-registry-for-systematic-reviews)
 
 # Getting Started
 
@@ -49,7 +47,8 @@ they use), so you may notice other packages getting installed, as well.
 
 ## General Resources for R and RStudio
 
--   <https://rafalab.github.io/dsbook>
+-   Irizarry, R. A. (2019). Introduction to data science: Data analysis
+    and prediction algorithms with R. <https://rafalab.github.io/dsbook>
 
 ## Additional Documentation of R Packages for Meta-analysis
 
@@ -67,7 +66,11 @@ tutorial in R. *Journal of Developmental and Life-Course Criminology*,
 
 Fisher, Z., & Tipton, E. (2015). robumeta: An R-package for robust
 variance estimation in meta-analysis. *arXiv preprint*.
-<https://arxiv.org/abs/1503.02220>
+<https://arxiv.org/abs/1503.02220>  
+\#\# Pre-registry for Systematic Reviews  
+- PROSPERO (For pre-registration of health-related systematic reviews):
+<https://www.crd.york.ac.uk/prospero/>  
+- Research Registry ($): <https://www.researchregistry.com/>
 
 ## Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA)
 
@@ -80,9 +83,3 @@ variance estimation in meta-analysis. *arXiv preprint*.
     for systematic review and meta-analysis protocols (PRISMA-P) 2015
     statement. *Systematic Reviews*, *4*(1), 1-9.
     <https://doi.org/10.1186/2046-4053-4-1>
-
-## Pre-registry for Systematic Reviews
-
--   PROSPERO (For pre-registration of health-related systematic
-    reviews): <https://www.crd.york.ac.uk/prospero/>  
--   Research Registry ($): <https://www.researchregistry.com/>
