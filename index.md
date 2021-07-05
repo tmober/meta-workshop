@@ -29,12 +29,16 @@ time. Note that you should only need to install the package once (unless
 you later re-install or update R). From then on, you can call the
 package into your library by using the “library()” or “require()”
 functions.  
-– [*tidyverse*](): Data manipulation  
-– [*dplyr*](): Data manipulation  
-– [*psych*](): Creating quick descriptive summaries of data  
-– [*metafor*](): Meta-analysis  
-– [*robumeta*](): Robust variance estimation meta-analysis  
-– [*ggplot2*](): Plotting
+– [*tidyverse*](https://www.tidyverse.org/packages/): Data
+manipulation  
+– [*dplyr*](https://dplyr.tidyverse.org/): Data manipulation  
+– [*psych*](https://cran.r-project.org/web/packages/psych/index.html):
+Creating quick descriptive summaries of data  
+– [*metafor*](https://www.metafor-project.org/doku.php): Meta-analysis  
+–
+[*robumeta*](https://cran.r-project.org/web/packages/robumeta/index.html):
+Robust variance estimation meta-analysis  
+– [*ggplot2*](https://ggplot2.tidyverse.org/): Plotting
 
 Most of these packages have packages dependencies (i.e., other packages
 they use), so you may notice other packages getting installed, as well.
