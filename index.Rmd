@@ -52,7 +52,7 @@ Tanner-Smith, E. E., Tipton, E., & Polanin, J. R. (2016). Handling complex meta-
 
 Fisher, Z., & Tipton, E. (2015). robumeta: An R-package for robust variance estimation in meta-analysis. *arXiv preprint*. https://arxiv.org/abs/1503.02220   
 
-## Pre-registry for Systematic Reviews  
+## Pre-registration of Systematic Reviews  
 - [PROSPERO](https://www.crd.york.ac.uk/prospero/): For pre-registration of health-related systematic reviews.    
 - [Research Registry](https://www.researchregistry.com/): Altnerative to PROSPERO that does not restrict systematic reviews to those related to human health. However, also costs money to submit a pre-registration.    
 - Many other alternatives, as well, that are not specific to systematic reviews, including the [Open Science Framework](https://osf.io/prereg/), [AsPredicted.Org](https://aspredicted.org/), etc.
