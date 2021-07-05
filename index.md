@@ -1,5 +1,3 @@
-Systematic Review and Meta-Analysis Workshop
-================
 Teresa Ober
 July 8, 2021
 

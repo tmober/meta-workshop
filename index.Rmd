@@ -1,5 +1,5 @@
 ---
-title: "Systematic Review and Meta-Analysis Workshop"
+title: ""
 author: "Teresa Ober"
 date: "July 8, 2021"
 output: 
