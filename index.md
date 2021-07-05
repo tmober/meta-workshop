@@ -3,14 +3,16 @@ July 8, 2021
 
 -   [Getting Started](#getting-started)
 -   [Resources](#resources)
+    -   [General Resources for R and
+        RStudio](#general-resources-for-r-and-rstudio)
+    -   [Additional Documentation of R Packages for
+        Meta-analysis](#additional-documentation-of-r-packages-for-meta-analysis)
+        -   [Robumeta](#robumeta)
     -   [Preferred Reporting Items for Systematic Reviews and
         Meta-Analyses
         (PRISMA)](#preferred-reporting-items-for-systematic-reviews-and-meta-analyses-prisma)
     -   [Pre-registry for Systematic
         Reviews](#pre-registry-for-systematic-reviews)
-    -   [R Packages for Meta-analysis](#r-packages-for-meta-analysis)
-    -   [General Resources for R and
-        RStudio](#general-resources-for-r-and-rstudio)
 
 # Getting Started
 
@@ -45,6 +47,28 @@ they use), so you may notice other packages getting installed, as well.
 
 # Resources
 
+## General Resources for R and RStudio
+
+-   <https://rafalab.github.io/dsbook>
+
+## Additional Documentation of R Packages for Meta-analysis
+
+Polanin, J. R., Hennessy, E. A., & Tanner-Smith, E. E. (2017). A review
+of meta-analysis packages in R. *Journal of Educational and Behavioral
+Statistics*, *42*(2), 206-242.
+<https://doi.org/10.3102/1076998616674315>
+
+### Robumeta
+
+Tanner-Smith, E. E., Tipton, E., & Polanin, J. R. (2016). Handling
+complex meta-analytic data structures using robust variance estimates: A
+tutorial in R. *Journal of Developmental and Life-Course Criminology*,
+*2*(1), 85-112. <https://doi.org/10.1002/jrsm.1091>
+
+Fisher, Z., & Tipton, E. (2015). robumeta: An R-package for robust
+variance estimation in meta-analysis. *arXiv preprint*.
+<https://arxiv.org/abs/1503.02220>
+
 ## Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA)
 
 -   Moher, D., Liberati, A., Tetzlaff, J., Altman, D. G., & PRISMA
@@ -62,14 +86,3 @@ they use), so you may notice other packages getting installed, as well.
 -   PROSPERO (For pre-registration of health-related systematic
     reviews): <https://www.crd.york.ac.uk/prospero/>  
 -   Research Registry ($): <https://www.researchregistry.com/>
-
-## R Packages for Meta-analysis
-
--   Metafor:
-    <https://cran.r-project.org/web/packages/metafor/index.html>  
--   Robumeta:
-    <https://cran.r-project.org/web/packages/robumeta/index.html>
-
-## General Resources for R and RStudio
-
--   <https://rafalab.github.io/dsbook>
