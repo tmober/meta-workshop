@@ -151,8 +151,11 @@ they use), so you may notice other packages getting installed, as well.
 
 #### Activity 2: Conducting a Meta-analysis
 
+-   (*Tutorial
+    webpage*)\[<https://tmober.github.io/meta-workshop/example-meta-script.html>\]  
 -   *Meta-analysis R Script*:
-    [Example\_Meta\_Analysis\_Script.R](https://drive.google.com/file/d/18LXOHctVDZMHR-iKHvfexfrjxhClrwNO/)  
+    [example-meta-analysis-script.R](https://drive.google.com/file/d/1xT1ihvlKSt_-a-j1wPGpna-9FTAHWfjK/view?usp=sharing)
+    [example-meta-analysis-script.Rmd](https://drive.google.com/file/d/1eUm6YTlH3zCF1WmLO-gcFHi589aCGzNQ/view?usp=sharing)  
 -   *Data file*:
     [ober\_2020\_ef\_decoding.csv](https://drive.google.com/file/d/1YykZF5iP0U6003c9UJeSsK-9K4h0-i8F/)
 
