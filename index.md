@@ -33,7 +33,7 @@ July 8, 2021
 
 Before the workshop, please consider taking a moment to complete the
 following steps:  
-1) Download the latest version of R statistical environment from the
+1. Download the latest version of R statistical environment from the
 website here: <https://cran.cmm.msu.ru/> .
 
 2.  Though not required, you will probably find it helpful to also
