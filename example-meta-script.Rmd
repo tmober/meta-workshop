@@ -17,6 +17,8 @@ knitr::opts_chunk$set(echo = TRUE,
 ```
 \newpage
 
+[Click here to return to main page](https://tmober.github.io/meta-workshop) 
+
 
 # 1. Set things up
 

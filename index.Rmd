@@ -23,7 +23,6 @@ library(metafor)
 library(robumeta)
 ```
 
-[Click here to return to main page](https://tmober.github.io/meta-workshop) 
 
 # Getting Started  
 Before the workshop, please consider taking a moment to complete the following steps:  
@@ -110,7 +109,7 @@ Most of these packages have packages dependencies (i.e., other packages they use
 - *Extracted Responses*: [GoogleSheet](https://docs.google.com/spreadsheets/d/1uQ-RgROwNAboQvsaKgVkv02whsFDE4fdHE5eW-vv7WU/)  
 
 #### Activity 2: Conducting a Meta-analysis  
-- [*Tutorial webpage*](https://tmober.github.io/meta-workshop/example-meta-script.html])   
+- [*Tutorial webpage*](https://tmober.github.io/meta-workshop/example-meta-script.html)   
 - *Meta-analysis R Script*:    
 -- [example-meta-analysis-script.R](https://drive.google.com/file/d/1xT1ihvlKSt_-a-j1wPGpna-9FTAHWfjK/)  
 -- [example-meta-analysis-script.Rmd](https://drive.google.com/file/d/1eUm6YTlH3zCF1WmLO-gcFHi589aCGzNQ/)  
