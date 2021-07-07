@@ -81,6 +81,19 @@ they use), so you may notice other packages getting installed, as well.
 8.  Risk of Bias and Quality Assessment  
 9.  Synthesis
 
+<style>
+.responsive-wrap iframe{ max-width: 100%;}
+</style>
+
+<div class="responsive-wrap">
+
+<!-- this is the embed code provided by Google -->
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRZs4CArb-zKJG2vS0nGIbILIpJZyIvCx3UkrTq8E6hIWiqVDIwh7u9O7DAAqg7og/embed?start=false&loop=false&delayms=3000" frameborder="0" width="640" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<!-- Google embed ends -->
+
+</div>
+
 ## Part 2: Introduction to Meta-analysis
 
 ### Session Aims:
