@@ -2,14 +2,25 @@ Teresa Ober
 July 8, 2021
 
 -   [Getting Started](#getting-started)
+    -   [Part 1: Introduction to Systematic
+        Review](#part-1-introduction-to-systematic-review)
+        -   [Session Aims:](#session-aims)
+        -   [Session Organization:](#session-organization)
+    -   [Part 2: Introduction to
+        Meta-analysis](#part-2-introduction-to-meta-analysis)
+        -   [Session Aims:](#session-aims-1)
+        -   [Session Organization:](#session-organization-1)
 -   [Resources](#resources)
     -   [General Resources for R and
         RStudio](#general-resources-for-r-and-rstudio)
+    -   [General Resources for Conducting Meta-analysis in
+        R](#general-resources-for-conducting-meta-analysis-in-r)
     -   [Additional Documentation of R Packages for
         Meta-analysis](#additional-documentation-of-r-packages-for-meta-analysis)
+        -   [Metafor](#metafor)
         -   [Robumeta](#robumeta)
-    -   [Pre-registry for Systematic
-        Reviews](#pre-registry-for-systematic-reviews)
+    -   [Pre-registration of Systematic
+        Reviews](#pre-registration-of-systematic-reviews)
     -   [Preferred Reporting Items for Systematic Reviews and
         Meta-Analyses
         (PRISMA)](#preferred-reporting-items-for-systematic-reviews-and-meta-analyses-prisma)
@@ -17,13 +28,15 @@ July 8, 2021
 # Getting Started
 
 Before the workshop, please consider taking a moment to complete the
-following steps: 1) Download the latest version of R statistical
-environment from the website here: <https://cran.cmm.msu.ru/> .  
+following steps:  
+1) Download the latest version of R statistical environment from the
+website here: <https://cran.cmm.msu.ru/> .  
 2) Though not required, you will probably find it helpful to also
 download RStudio: <https://www.rstudio.com/products/rstudio/download/> .
 For our purposes, the free “RStudio Desktop” version will work just
-fine. - If you’re not familiar with RStudio at all, [Chapter 1 of this
-online textbook](https://rafalab.github.io/dsbook/getting-started.html)
+fine.  
+- If you’re not familiar with RStudio at all, [Chapter 1 of this online
+textbook](https://rafalab.github.io/dsbook/getting-started.html)
 provides a gentle introduction.  
 3) During the workshop, we will be using the following packages, so if
 you are able to install R, please also consider installing them ahead of
@@ -44,13 +57,62 @@ Robust variance estimation meta-analysis
 
 Most of these packages have packages dependencies (i.e., other packages
 they use), so you may notice other packages getting installed, as well.
+\# Overview of Workshop Topics
+
+## Part 1: Introduction to Systematic Review
+
+### Session Aims:
+
+-   Receive overview of systematic review processes  
+-   Discuss the scope and the formulation of a review question  
+-   Consider the purpose and format of a protocol  
+-   Gain familiarity with systematic searching/screening strategies  
+-   Learn data extraction, quality assessment, and synthesis
+
+### Session Organization:
+
+1.  What is a systematic review?  
+2.  Best practices for conducting systematic reviews  
+3.  Question Formulation  
+4.  Creating a Protocol  
+5.  Searching for Literature  
+6.  Screening Literature  
+7.  Data Extraction  
+8.  Risk of Bias and Quality Assessment  
+9.  Synthesis
+
+## Part 2: Introduction to Meta-analysis
+
+### Session Aims:
+
+-   Receive overview of steps involved in a meta-analysis  
+-   Discuss effect size estimates and challenges to extraction  
+-   Gain an orientation to fixed- and random-effects models  
+-   Experience data extraction and meta-analysis  
+-   Outline the reporting of meta-analysis findings
+
+### Session Organization:
+
+1.  What is a meta-analysis?  
+2.  Effect size estimates  
+3.  Fixed- and Random-Effects  
+4.  Resources for Conducting Meta-analysis  
+5.  Reporting Results
 
 # Resources
 
 ## General Resources for R and RStudio
 
--   Irizarry, R. A. (2019). Introduction to data science: Data analysis
-    and prediction algorithms with R. <https://rafalab.github.io/dsbook>
+-   Irizarry, R. A. (2019). *Introduction to data science: Data analysis
+    and prediction algorithms with R.*
+    <https://rafalab.github.io/dsbook>
+
+## General Resources for Conducting Meta-analysis in R
+
+-   Harrer, M., Cuijpers, P., Furukawa, T.A., & Ebert, D.D. (2021).
+    *Doing Meta-Analysis with R: A Hands-On Guide.* Boca Raton, FL and
+    London: Chapmann & Hall/CRC Press. ISBN 978-0-367-61007-4.
+    <https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/>
 
 ## Additional Documentation of R Packages for Meta-analysis
 
@@ -58,6 +120,11 @@ Polanin, J. R., Hennessy, E. A., & Tanner-Smith, E. E. (2017). A review
 of meta-analysis packages in R. *Journal of Educational and Behavioral
 Statistics*, *42*(2), 206-242.
 <https://doi.org/10.3102/1076998616674315>
+
+### Metafor
+
+The metafor Package: Tips and Notes.
+<https://metafor-project.org/doku.php/tips>
 
 ### Robumeta
 
@@ -70,7 +137,7 @@ Fisher, Z., & Tipton, E. (2015). robumeta: An R-package for robust
 variance estimation in meta-analysis. *arXiv preprint*.
 <https://arxiv.org/abs/1503.02220>
 
-## Pre-registry for Systematic Reviews
+## Pre-registration of Systematic Reviews
 
 -   [PROSPERO](https://www.crd.york.ac.uk/prospero/): For
     pre-registration of health-related systematic reviews.  
