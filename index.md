@@ -2,16 +2,18 @@ Teresa Ober
 July 8, 2021
 
 -   [Getting Started](#getting-started)
+-   [Overview of Workshop Topics](#overview-of-workshop-topics)
     -   [Part 1: Introduction to Systematic
         Review](#part-1-introduction-to-systematic-review)
-        -   [Session Aims:](#session-aims)
-        -   [Session Organization:](#session-organization)
-        -   [Session Slides:](#session-slides)
+        -   [Aims:](#aims)
+        -   [Organization:](#organization)
+        -   [Slides:](#slides)
     -   [Part 2: Introduction to
         Meta-analysis](#part-2-introduction-to-meta-analysis)
-        -   [Session Aims:](#session-aims-1)
-        -   [Session Organization:](#session-organization-1)
-        -   [Session Slides:](#session-slides-1)
+        -   [Aims:](#aims-1)
+        -   [Organization:](#organization-1)
+        -   [Slides:](#slides-1)
+        -   [Activity Materials:](#activity-materials)
 -   [Resources](#resources)
     -   [General Resources for R and
         RStudio](#general-resources-for-r-and-rstudio)
@@ -59,11 +61,12 @@ Robust variance estimation meta-analysis
 
 Most of these packages have packages dependencies (i.e., other packages
 they use), so you may notice other packages getting installed, as well.
-\# Overview of Workshop Topics
+
+# Overview of Workshop Topics
 
 ## Part 1: Introduction to Systematic Review
 
-### Session Aims:
+### Aims:
 
 -   Receive overview of systematic review processes  
 -   Discuss the scope and the formulation of a review question  
@@ -71,7 +74,7 @@ they use), so you may notice other packages getting installed, as well.
 -   Gain familiarity with systematic searching/screening strategies  
 -   Learn data extraction, quality assessment, and synthesis
 
-### Session Organization:
+### Organization:
 
 1.  What is a systematic review?  
 2.  Best practices for conducting systematic reviews  
@@ -83,7 +86,7 @@ they use), so you may notice other packages getting installed, as well.
 8.  Risk of Bias and Quality Assessment  
 9.  Synthesis
 
-### Session Slides:
+### Slides:
 
 <style>
 .responsive-wrap iframe{ max-width: 100%;}
@@ -100,7 +103,7 @@ they use), so you may notice other packages getting installed, as well.
 
 ## Part 2: Introduction to Meta-analysis
 
-### Session Aims:
+### Aims:
 
 -   Receive overview of steps involved in a meta-analysis  
 -   Discuss effect size estimates and challenges to extraction  
@@ -108,7 +111,7 @@ they use), so you may notice other packages getting installed, as well.
 -   Experience data extraction and meta-analysis  
 -   Outline the reporting of meta-analysis findings
 
-### Session Organization:
+### Organization:
 
 1.  What is a meta-analysis?  
 2.  Effect size estimates  
@@ -116,7 +119,7 @@ they use), so you may notice other packages getting installed, as well.
 4.  Resources for Conducting Meta-analysis  
 5.  Reporting Results
 
-### Session Slides:
+### Slides:
 
 <style>
 .responsive-wrap iframe{ max-width: 100%;}
@@ -130,6 +133,13 @@ they use), so you may notice other packages getting installed, as well.
 <!-- Google embed ends -->
 
 </div>
+
+### Activity Materials:
+
+-   *Meta-analysis R Script*:
+    [Example\_Meta\_Analysis\_Script.R](https://drive.google.com/file/d/18LXOHctVDZMHR-iKHvfexfrjxhClrwNO/)  
+-   *Data file*:
+    [ober\_2020\_ef\_decoding.csv](https://drive.google.com/file/d/1YykZF5iP0U6003c9UJeSsK-9K4h0-i8F)
 
 # Resources
 

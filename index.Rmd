@@ -36,19 +36,21 @@ Before the workshop, please consider taking a moment to complete the following s
 -- [*robumeta*](https://cran.r-project.org/web/packages/robumeta/index.html): Robust variance estimation meta-analysis  
 -- [*ggplot2*](https://ggplot2.tidyverse.org/): Plotting  
 
-Most of these packages have packages dependencies (i.e., other packages they use), so you may notice other packages getting installed, as well. \newpage  
+Most of these packages have packages dependencies (i.e., other packages they use), so you may notice other packages getting installed, as well. 
+
+\newpage  
 # Overview of Workshop Topics  
 
 ## Part 1: Introduction to Systematic Review  
 
-### Session Aims:  
+### Aims:  
 - Receive overview of systematic review processes  
 - Discuss the scope and the formulation of a review question  
 - Consider the purpose and format of a protocol  
 - Gain familiarity with  systematic searching/screening strategies  
 - Learn data extraction, quality assessment, and synthesis  
 
-### Session Organization:  
+### Organization:  
 1) What is a systematic review?  
 2) Best practices for conducting systematic reviews  
 3) Question Formulation  
@@ -59,7 +61,7 @@ Most of these packages have packages dependencies (i.e., other packages they use
 8) Risk of Bias and Quality Assessment  
 9) Synthesis  
 
-### Session Slides:  
+### Slides:  
 <style>
 .responsive-wrap iframe{ max-width: 100%;}
 </style>
@@ -71,7 +73,7 @@ Most of these packages have packages dependencies (i.e., other packages they use
 
 ## Part 2: Introduction to Meta-analysis
 
-### Session Aims:  
+### Aims:  
 - Receive overview of steps involved in a meta-analysis  
 - Discuss effect size estimates and challenges to extraction  
 - Gain an orientation to fixed- and random-effects models  
@@ -79,7 +81,7 @@ Most of these packages have packages dependencies (i.e., other packages they use
 - Outline the reporting of meta-analysis findings  
 
 
-### Session Organization:  
+### Organization:  
 1) What is a meta-analysis?  
 2) Effect size estimates  
 3) Fixed- and Random-Effects  
@@ -87,7 +89,7 @@ Most of these packages have packages dependencies (i.e., other packages they use
 5) Reporting Results  
 
 
-### Session Slides:  
+### Slides:  
 <style>
 .responsive-wrap iframe{ max-width: 100%;}
 </style>
@@ -96,6 +98,12 @@ Most of these packages have packages dependencies (i.e., other packages they use
   <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS_9LZvC7JpMsN1k12ERa7cMujLnuY99QVxiEiGX7nZyYVsRyIQ1PgUFbq2Hza9lQ/embed?start=false&loop=false&delayms=3000" frameborder="0" width="640" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 <!-- Google embed ends -->
 </div>
+
+### Activity Materials:
+- *Meta-analysis R Script*: 
+[Example_Meta_Analysis_Script.R](https://drive.google.com/file/d/18LXOHctVDZMHR-iKHvfexfrjxhClrwNO/)  
+- *Data file*: [ober_2020_ef_decoding.csv](https://drive.google.com/file/d/1YykZF5iP0U6003c9UJeSsK-9K4h0-i8F)  
+
 
 
 \newpage
