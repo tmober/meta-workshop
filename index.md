@@ -136,10 +136,21 @@ they use), so you may notice other packages getting installed, as well.
 
 ### Activity Materials:
 
+#### Activity 1: Data Extraction
+
+-   *Data Extraction Form*:
+    [GoogleForm](https://forms.gle/PL45xH4oFEAWYqrD9)  
+-   *Manuscript to be Extracted*: [Kieffer et
+    al. (2013)](https://drive.google.com/file/d/1SOb6kzKWZyzNLRY--FrcDRdJSQulZcgq/)  
+-   *Extracted Responses*:
+    [GoogleSheet](https://docs.google.com/spreadsheets/d/1uQ-RgROwNAboQvsaKgVkv02whsFDE4fdHE5eW-vv7WU/)
+
+#### Activity 2: Conducting a Meta-analysis
+
 -   *Meta-analysis R Script*:
     [Example\_Meta\_Analysis\_Script.R](https://drive.google.com/file/d/18LXOHctVDZMHR-iKHvfexfrjxhClrwNO/)  
 -   *Data file*:
-    [ober\_2020\_ef\_decoding.csv](https://drive.google.com/file/d/1YykZF5iP0U6003c9UJeSsK-9K4h0-i8F)
+    [ober\_2020\_ef\_decoding.csv](https://drive.google.com/file/d/1YykZF5iP0U6003c9UJeSsK-9K4h0-i8F/)
 
 # Resources
 
