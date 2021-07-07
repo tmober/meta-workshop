@@ -32,9 +32,10 @@ July 8, 2021
 # Getting Started
 
 Before the workshop, please consider taking a moment to complete the
-following steps:  
-1) Download the latest version of R statistical environment from the
-website here: <https://cran.cmm.msu.ru/> .
+following steps:
+
+1.  Download the latest version of R statistical environment from the
+    website here: <https://cran.cmm.msu.ru/> .
 
 2.  Though not required, you will probably find it helpful to also
     download RStudio:
@@ -55,8 +56,8 @@ website here: <https://cran.cmm.msu.ru/> .
     – [*dplyr*](https://dplyr.tidyverse.org/): Data manipulation  
     –
     [*googlesheets*](https://cran.r-project.org/web/packages/googlesheets/index.html):
-    For tutorial, will help with importing data (not necessary for
-    conducting the actual meta-analysis)  
+    For tutorial only. This package will help with importing data (not
+    necessary for conducting the actual meta-analysis)  
     –
     [*psych*](https://cran.r-project.org/web/packages/psych/index.html):
     Creating quick descriptive summaries of data  
