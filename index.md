@@ -5,15 +5,15 @@ July 8, 2021
 -   [Overview of Workshop Topics](#overview-of-workshop-topics)
     -   [Part 1: Introduction to Systematic
         Review](#part-1-introduction-to-systematic-review)
-        -   [Aims:](#aims)
-        -   [Organization:](#organization)
-        -   [Slides:](#slides)
+        -   [Aims](#aims)
+        -   [Organization](#organization)
+        -   [Slides](#slides)
     -   [Part 2: Introduction to
         Meta-analysis](#part-2-introduction-to-meta-analysis)
-        -   [Aims:](#aims-1)
-        -   [Organization:](#organization-1)
-        -   [Slides:](#slides-1)
-        -   [Activity Materials:](#activity-materials)
+        -   [Aims](#aims-1)
+        -   [Organization](#organization-1)
+        -   [Slides](#slides-1)
+        -   [Activity Materials](#activity-materials)
 -   [Resources](#resources)
     -   [General Resources for R and
         RStudio](#general-resources-for-r-and-rstudio)
@@ -28,6 +28,9 @@ July 8, 2021
     -   [Preferred Reporting Items for Systematic Reviews and
         Meta-Analyses
         (PRISMA)](#preferred-reporting-items-for-systematic-reviews-and-meta-analyses-prisma)
+
+[Click here to return to main
+page](https://tmober.github.io/meta-workshop)
 
 # Getting Started
 
@@ -70,7 +73,7 @@ they use), so you may notice other packages getting installed, as well.
 
 ## Part 1: Introduction to Systematic Review
 
-### Aims:
+### Aims
 
 -   Receive overview of systematic review processes  
 -   Discuss the scope and the formulation of a review question  
@@ -78,7 +81,7 @@ they use), so you may notice other packages getting installed, as well.
 -   Gain familiarity with systematic searching/screening strategies  
 -   Learn data extraction, quality assessment, and synthesis
 
-### Organization:
+### Organization
 
 1.  What is a systematic review?  
 2.  Best practices for conducting systematic reviews  
@@ -90,7 +93,7 @@ they use), so you may notice other packages getting installed, as well.
 8.  Risk of Bias and Quality Assessment  
 9.  Synthesis
 
-### Slides:
+### Slides
 
 <style>
 .responsive-wrap iframe{ max-width: 100%;}
@@ -107,7 +110,7 @@ they use), so you may notice other packages getting installed, as well.
 
 ## Part 2: Introduction to Meta-analysis
 
-### Aims:
+### Aims
 
 -   Receive overview of steps involved in a meta-analysis  
 -   Discuss effect size estimates and challenges to extraction  
@@ -115,7 +118,7 @@ they use), so you may notice other packages getting installed, as well.
 -   Experience data extraction and meta-analysis  
 -   Outline the reporting of meta-analysis findings
 
-### Organization:
+### Organization
 
 1.  What is a meta-analysis?  
 2.  Effect size estimates  
@@ -123,7 +126,7 @@ they use), so you may notice other packages getting installed, as well.
 4.  Resources for Conducting Meta-analysis  
 5.  Reporting Results
 
-### Slides:
+### Slides
 
 <style>
 .responsive-wrap iframe{ max-width: 100%;}
@@ -138,7 +141,7 @@ they use), so you may notice other packages getting installed, as well.
 
 </div>
 
-### Activity Materials:
+### Activity Materials
 
 #### Activity 1: Data Extraction
 
@@ -151,11 +154,13 @@ they use), so you may notice other packages getting installed, as well.
 
 #### Activity 2: Conducting a Meta-analysis
 
--   (*Tutorial
-    webpage*)\[<https://tmober.github.io/meta-workshop/example-meta-script.html>\]  
--   *Meta-analysis R Script*:
-    [example-meta-analysis-script.R](https://drive.google.com/file/d/1xT1ihvlKSt_-a-j1wPGpna-9FTAHWfjK/view?usp=sharing)
-    [example-meta-analysis-script.Rmd](https://drive.google.com/file/d/1eUm6YTlH3zCF1WmLO-gcFHi589aCGzNQ/view?usp=sharing)  
+-   [*Tutorial
+    webpage*](https://tmober.github.io/meta-workshop/example-meta-script.html%5D)  
+-   *Meta-analysis R Script*:  
+    –
+    [example-meta-analysis-script.R](https://drive.google.com/file/d/1xT1ihvlKSt_-a-j1wPGpna-9FTAHWfjK/)  
+    –
+    [example-meta-analysis-script.Rmd](https://drive.google.com/file/d/1eUm6YTlH3zCF1WmLO-gcFHi589aCGzNQ/)  
 -   *Data file*:
     [ober\_2020\_ef\_decoding.csv](https://drive.google.com/file/d/1YykZF5iP0U6003c9UJeSsK-9K4h0-i8F/)
 
