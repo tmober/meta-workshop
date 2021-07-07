@@ -51,6 +51,10 @@ functions.
 – [*tidyverse*](https://www.tidyverse.org/packages/): Data
 manipulation  
 – [*dplyr*](https://dplyr.tidyverse.org/): Data manipulation  
+–
+[*googlesheets*](https://cran.r-project.org/web/packages/googlesheets/index.html):
+For tutorial, will help with importing data (not necessary for
+conducting the actual meta-analysis)  
 – [*psych*](https://cran.r-project.org/web/packages/psych/index.html):
 Creating quick descriptive summaries of data  
 – [*metafor*](https://www.metafor-project.org/doku.php): Meta-analysis  

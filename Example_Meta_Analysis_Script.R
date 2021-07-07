@@ -1,13 +1,13 @@
-##########################################################################
-############## Run meta-analysis using the metafor package ###############
-##########################################################################
+#####################################################
+############## Run meta-analysis in R ###############
+#####################################################
 
 
 ############## 1. Set things up ############## 
 
 # Install packages using the pacman package
 if (!require("pacman")) install.packages("pacman")
-pacman::p_load(tidyverse, googlesheets, metafor, robumeta, ggplot2)
+pacman::p_load(tidyverse, dplyr, googlesheets, metafor, robumeta, ggplot2)
 
 
 ## Import data from Google Sheets
@@ -32,7 +32,7 @@ ef_decod_raw_data <- gs_read(key, ws = "ober_2020_ef_decoding",
                        `InhibCont0` = col_integer(), 
                        `Verbal0NV1` = col_integer(), 
                        `r` = col_double()
-                       )) %>%
+                       ), fileEncoding = "UTF-8-BOM") %>%
   as.data.frame()
 
 # Import data from .csv
@@ -52,11 +52,22 @@ ef_decod_data <- escalc(measure = "ZCOR",        # we are generating Fisher's Z-
                     slab = Study)                # study labels
 
 
-############## 3. Run the main meta-analytic model ############## 
+##############  3. Visually inspect data for potential outliers  ############## 
+
+# Check for outliers with violin plot. In this case, the violin plot does not seem to indicate the presence of any obvious outliers  
+
+ggplot(ef_decod_data, aes(x='', y = yi)) + 
+  geom_violin(trim=FALSE) + 
+  geom_jitter(shape=16, position=position_jitter(0.15)) + 
+  labs(title="Plot of Effect Size (With Outliers)", x="", y = "Effect size (Fisher's z)")
+
+
+
+############## 4. Run the main meta-analytic model ############## 
 
 # Fit the random effects model with no moderators without accounting for study interdependencies
 model_metafor <- rma(yi = yi, 
-                         V = vi,
+                         vi = vi,
                          data = ef_decod_data,
                          method = "REML",         # restricted maximum likelihood
                          level = 95,              # CI
@@ -74,7 +85,6 @@ model_metafor_mv <- rma.mv(yi = yi,
                            digits = 7,              # decimal points
                            slab = Study,            # study labels
                            random = ~ 1 | Study)    # multilevel model to handle sample dependency (can also use "Author" if it makes more sense to do so)
-
 model_metafor_mv
 
 
@@ -89,7 +99,7 @@ print(model_robu, digits = 7)
 
 
 
-############## 4. Calculate heterogeneity ############## 
+############## 5. Calculate heterogeneity ############## 
 
 # Calculate the I^2 statistic for a multilevel model
 # Using the formula from www.metafor-project.org/doku.php/tips:i2_multilevel_multivariate
@@ -102,24 +112,25 @@ I2_statistic <- 100 * sum(model_metafor_mv$sigma2) / (sum(model_metafor_mv$sigma
 I2_statistic
 
 
-############## 5. Check outliers ############## 
+############## 6. Check influential points ############## 
 
 # Using standardized residuals of correlations (and create png)
 resid <- residuals(model_metafor_mv) %>%
   scale(center = FALSE, scale = TRUE)  # convert residuals to z-scores
 
-par(mar=c(6,6,4,4))  # change margins to use full space
 plot(resid, type="o", pch=19)
 png(filename = "ResidualsPlot.png", 
     width = 800, height = 640, 
     pointsize = 12, res = 120)
 plot(resid, type="o", pch=19)
-dev.off()
+# Close off set par back to the original settings
+# dev.off()
+
 
 outliers_resid <- resid %>%
   cbind(ef_decod_data$Study) %>%            # bind study names for reference
-  subset(resid > 3.0 | resid < - 3.0) %>%   # subset outliers
-  View()
+  subset(resid > 3.0 | resid < - 3.0)      # subset outliers
+outliers_resid
 
 # Using Cook's distance (and create png)
 cooks <- cooks.distance(model_metafor_mv)
@@ -128,13 +139,13 @@ png(filename = "CooksDistancePlot.png",
     width = 800, height = 640, 
     pointsize = 12, res = 120)
 plot(cooks, type="o", pch=19)
-dev.off()
+# dev.off()
 
 # View outliers with Cooks > 3 * mean
 outliers_cooks <- cooks %>% 
   cbind(ef_decod_data$Study) %>%           # bind study names for reference
-  subset(cooks > 3.0*mean(cooks)) %>%      # subset outliers
-  View()
+  subset(cooks > 3.0*mean(cooks))          # subset outliers
+outliers_cooks
 
 # Create new dataframe with outliers removed
 ef_decod_data_no_outliers <- ef_decod_data %>%
@@ -143,17 +154,11 @@ ef_decod_data_no_outliers <- ef_decod_data %>%
 
 
 
-############## 6. Create forest plot ############## 
-
-# Save output as pdf
-pdf("ForestPlot.pdf", family = "Courier", width = 10, height = 8.5)
-
-# Decrease margins so the full space is used
-par(mar=c(2.5,4,1,2.5), cex = .9, font = 1)
+############## 7. Create forest plot ############## 
 
 # Create the forest plot
 forest(model_metafor_mv, 
-       xlim = c(-2.5, 1.8),                 # adjust horizontal plot region limits
+       xlim = c(-.5, 1.5),                     # adjust horizontal plot region limits
        order ="obs",                        # order by effect size
        addfit = TRUE,                       # add standard summary polygon
        annotate = TRUE,                     # remove annotations
@@ -169,25 +174,62 @@ forest(model_metafor_mv,
                "solid",                     # credibility interval line type
                "solid"),                    # horizontal line type
        xlab = "",                           # label X axis
-       mlab = "RE Model: p = .04, I2 = 93.9",    # label summary estimate
-       showweights=F,                       # include weights given to effects in model fitting
+       mlab = "RE Model: p<.001, I2=72.1",  # label summary estimate
+       showweights = FALSE,                       # include weights given to effects in model fitting
        steps = 5)                           # number of tick marks for the x-axis
 
-# Switch to bold font
-par(cex = .9, font = 2)
-
-# Add column headings to the plot
-text(-2.5, 22, "Study name", pos = 4, cex = .9)
-text(1.8, 22, "Correlation and 95% CI", pos = 2, cex = .9)
-
-# Close off set par back to the original settings
-dev.off()
-
-op <- par(cex = .9, font = 1)
-par(op)
+# dev.off()
 
 
-############## 7. Run moderator analyses ############## 
+
+## Re-run forest plot with median effect size estimates per study  
+## Since the previous plot may be difficult to read, we may want to aggregate effect size estimates within each study. The plot below shows only the median effect size for each study. This is not exactly accurate, but does help in creating a simple illustration of the variation in effect sizes between studies.  
+
+## select median effect size and median variance term for each study
+ef_decod_data_forest <- ef_decod_data_no_outliers %>%
+  select(Study, yi, vi) %>%
+  group_by(Study) %>%
+  summarise(yi_median = median(yi),
+            vi_median = median(vi)) %>%
+  ungroup() %>%
+  as.data.frame()
+
+## conduct meta-analysis without accounting for clustering
+model_metafor_forest <- rma(yi = yi_median, 
+                            vi = vi_median,
+                            data = ef_decod_data_forest,
+                            method = "REML",
+                            level = 95,
+                            digits = 7,
+                            slab = Study)
+
+## create simplified forest plot
+forest(model_metafor_forest, 
+       xlim = c(-.75, 1.25),                  # adjust horizontal plot region limits
+       order ="obs",                          # order by effect size
+       addfit = TRUE,                         # add standard summary polygon
+       annotate = TRUE,                       # remove annotations
+       # width = 0,                           # width of annotations
+       # efac = .55,                          # height of CI bars
+       # pch = 19,                            # changing point symbol to filled circle
+       # col = "gray40",                      # change color of points/CIs
+       # clim = c(-1 ,1),                     # set absolute limits for CIs
+       # cex.lab = 1,                         # increase size of x-axis title
+       # cex.axis = 1,                        # increase size of x-axis labels
+       # cex = .85,                           # set font expansion factor
+       lty = c("solid",                       # CI line type
+               "solid",                       # credibility interval line type
+               "solid"),                      # horizontal line type
+       xlab = "",                             # label X axis
+       mlab = "RE Model: p<.001, I2=68.7",    # label summary estimate
+       showweights = FALSE,                   # include weights given to effects in model fitting
+       steps = 5)                             # number of tick marks for the x-axis
+
+# dev.off()
+
+
+
+############## 8. Run moderator analyses ############## 
 
 # Test moderator 1: (e.g., type of decoding task)
 model_moderator1 <-  rma.mv(yi = yi, 
@@ -206,7 +248,7 @@ model_moderator2 <-  rma.mv(yi = yi,
 model_moderator2
 
 
-############## 8. Test for biases ############## 
+############## 9. Test for biases ############## 
 
 # Using published vs unpublished
 model_published <- rma.mv(yi = yi, 
@@ -232,25 +274,13 @@ model_trim_fill <- rma(yi = yi,
                data = ef_decod_data_no_outliers)
 
 # Create funnel plot (with trim and fill)
-#pdf("FunnelPlot.pdf", width=7, height=5)
 par(mar=c(4.5,4.5,1,1))
 taf <- trimfill(model_trim_fill) # estimate missing studies
 funnel(taf,                      # add missing studies to plot
-       xlim=c(-1,1), 
+       xlim=c(-.6,1), 
        xlab= "Correlation", 
        ylim = c(.24, 0), 
        steps = 4, 
        digits = c(1, 2))
 par(mar=c(2.5,3.6,0,1.5))
 # dev.off()
-
-# Using p-curve
-# The content of the .csv file generated below can be copy-pasted
-# into www.p-curve.com/app4/ to create the p-curve image
-
-degrees_freedom <- ef_decod_data_no_outliers$NSubjects - 2
-p_curve_data <- paste("R(", degrees_freedom, ")=", ef_decod_data_no_outliers$yi, sep="")
-print(p_curve_data, row.names=FALSE)
-# write.table(p_curve_data, "p-CurveData.csv", sep=",", row.names=FALSE, col.names=FALSE)
-
-

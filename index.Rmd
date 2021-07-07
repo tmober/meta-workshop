@@ -31,6 +31,7 @@ Before the workshop, please consider taking a moment to complete the following s
 3) During the workshop, we will be using the following packages, so if you are able to install R, please also consider installing them ahead of time. Note that you should only need to install the package once (unless you later re-install or update R). From then on, you can call the package into your library by using the "library()" or "require()" functions.     
 -- [*tidyverse*](https://www.tidyverse.org/packages/): Data manipulation  
 -- [*dplyr*](https://dplyr.tidyverse.org/): Data manipulation  
+-- [*googlesheets*](https://cran.r-project.org/web/packages/googlesheets/index.html): For tutorial, will help with importing data (not necessary for conducting the actual meta-analysis)  
 -- [*psych*](https://cran.r-project.org/web/packages/psych/index.html): Creating quick descriptive summaries of data  
 -- [*metafor*](https://www.metafor-project.org/doku.php): Meta-analysis   
 -- [*robumeta*](https://cran.r-project.org/web/packages/robumeta/index.html): Robust variance estimation meta-analysis  
