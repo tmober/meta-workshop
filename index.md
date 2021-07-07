@@ -6,10 +6,12 @@ July 8, 2021
         Review](#part-1-introduction-to-systematic-review)
         -   [Session Aims:](#session-aims)
         -   [Session Organization:](#session-organization)
+        -   [Session Slides:](#session-slides)
     -   [Part 2: Introduction to
         Meta-analysis](#part-2-introduction-to-meta-analysis)
         -   [Session Aims:](#session-aims-1)
         -   [Session Organization:](#session-organization-1)
+        -   [Session Slides:](#session-slides-1)
 -   [Resources](#resources)
     -   [General Resources for R and
         RStudio](#general-resources-for-r-and-rstudio)
@@ -81,6 +83,8 @@ they use), so you may notice other packages getting installed, as well.
 8.  Risk of Bias and Quality Assessment  
 9.  Synthesis
 
+### Session Slides:
+
 <style>
 .responsive-wrap iframe{ max-width: 100%;}
 </style>
@@ -111,6 +115,21 @@ they use), so you may notice other packages getting installed, as well.
 3.  Fixed- and Random-Effects  
 4.  Resources for Conducting Meta-analysis  
 5.  Reporting Results
+
+### Session Slides:
+
+<style>
+.responsive-wrap iframe{ max-width: 100%;}
+</style>
+
+<div class="responsive-wrap">
+
+<!-- this is the embed code provided by Google -->
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS_9LZvC7JpMsN1k12ERa7cMujLnuY99QVxiEiGX7nZyYVsRyIQ1PgUFbq2Hza9lQ/embed?start=false&loop=false&delayms=3000" frameborder="0" width="640" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<!-- Google embed ends -->
+
+</div>
 
 # Resources
 
