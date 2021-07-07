@@ -29,9 +29,6 @@ July 8, 2021
         Meta-Analyses
         (PRISMA)](#preferred-reporting-items-for-systematic-reviews-and-meta-analyses-prisma)
 
-[Click here to return to main
-page](https://tmober.github.io/meta-workshop)
-
 # Getting Started
 
 Before the workshop, please consider taking a moment to complete the
@@ -155,7 +152,7 @@ they use), so you may notice other packages getting installed, as well.
 #### Activity 2: Conducting a Meta-analysis
 
 -   [*Tutorial
-    webpage*](https://tmober.github.io/meta-workshop/example-meta-script.html%5D)  
+    webpage*](https://tmober.github.io/meta-workshop/example-meta-script.html)  
 -   *Meta-analysis R Script*:  
     –
     [example-meta-analysis-script.R](https://drive.google.com/file/d/1xT1ihvlKSt_-a-j1wPGpna-9FTAHWfjK/)  
