@@ -116,7 +116,7 @@ Most of these packages have packages dependencies (i.e., other packages they use
 -- [example-meta-analysis-script.R](https://drive.google.com/file/d/1xT1ihvlKSt_-a-j1wPGpna-9FTAHWfjK/)  
 -- [example-meta-analysis-script.Rmd](https://drive.google.com/file/d/1eUm6YTlH3zCF1WmLO-gcFHi589aCGzNQ/)  
 - *Data file*: [ober_2020_ef_decoding.csv](https://drive.google.com/file/d/1YykZF5iP0U6003c9UJeSsK-9K4h0-i8F/)  
-- *Published manuscript with additional details about dataset*: Ober, T. M., Brooks, P. J., Homer, B. D., & Rindskopf, D. (2020). Executive functions and decoding in children and adolescents: A meta-analytic investigation. *Educational Psychology Review*, *32*, 735–763. https://doi.org/10.1007/s10648-020-09526-0   
+- *Published manuscript with additional details about dataset*: Ober, T. M., Brooks, P. J., Homer, B. D., & Rindskopf, D. (2020). Executive functions and decoding in children and adolescents: A meta-analytic investigation. *Educational Psychology Review*, *32*, 735–763. https://doi.org/10.1007/s10648-020-09526-0 [[Quick link]](https://drive.google.com/file/d/1aCX1fmM_0xd3319_Jpw-QgqC1k0Nuv6T/)   
 
 
 

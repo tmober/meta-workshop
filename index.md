@@ -173,7 +173,8 @@ they use), so you may notice other packages getting installed, as well.
     Ober, T. M., Brooks, P. J., Homer, B. D., & Rindskopf, D. (2020).
     Executive functions and decoding in children and adolescents: A
     meta-analytic investigation. *Educational Psychology Review*, *32*,
-    735–763. <https://doi.org/10.1007/s10648-020-09526-0>
+    735–763. <https://doi.org/10.1007/s10648-020-09526-0> [\[Quick
+    link\]](https://drive.google.com/file/d/1aCX1fmM_0xd3319_Jpw-QgqC1k0Nuv6T/)
 
 # Resources
 
