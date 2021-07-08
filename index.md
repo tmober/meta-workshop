@@ -150,8 +150,11 @@ they use), so you may notice other packages getting installed, as well.
 
 -   *Data Extraction Form*:
     [GoogleForm](https://forms.gle/PL45xH4oFEAWYqrD9)  
--   *Manuscript to be Extracted*: [Kieffer et
-    al. (2013)](https://drive.google.com/file/d/1SOb6kzKWZyzNLRY--FrcDRdJSQulZcgq/)  
+-   *Manuscript to be Extracted*: Kieffer, M. J., Vukovic, R. K., &
+    Berry, D. (2013). Roles of attention shifting and inhibitory control
+    in fourth‐grade reading comprehension. *Reading Research Quarterly*,
+    *48*(4), 333-348. <https://doi.org/10.1002/rrq.54> [\[Quick
+    link\]](https://drive.google.com/file/d/1SOb6kzKWZyzNLRY--FrcDRdJSQulZcgq/)  
 -   *Extracted Responses*:
     [GoogleSheet](https://docs.google.com/spreadsheets/d/1uQ-RgROwNAboQvsaKgVkv02whsFDE4fdHE5eW-vv7WU/)
 
@@ -165,7 +168,12 @@ they use), so you may notice other packages getting installed, as well.
     –
     [example-meta-analysis-script.Rmd](https://drive.google.com/file/d/1eUm6YTlH3zCF1WmLO-gcFHi589aCGzNQ/)  
 -   *Data file*:
-    [ober\_2020\_ef\_decoding.csv](https://drive.google.com/file/d/1YykZF5iP0U6003c9UJeSsK-9K4h0-i8F/)
+    [ober\_2020\_ef\_decoding.csv](https://drive.google.com/file/d/1YykZF5iP0U6003c9UJeSsK-9K4h0-i8F/)  
+-   *Published manuscript with additional details about dataset*:
+    Ober, T. M., Brooks, P. J., Homer, B. D., & Rindskopf, D. (2020).
+    Executive functions and decoding in children and adolescents: A
+    meta-analytic investigation. *Educational Psychology Review*, *32*,
+    735–763. <https://doi.org/10.1007/s10648-020-09526-0>
 
 # Resources
 

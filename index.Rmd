@@ -107,7 +107,7 @@ Most of these packages have packages dependencies (i.e., other packages they use
 
 #### Activity 1: Data Extraction  
 - *Data Extraction Form*: [GoogleForm](https://forms.gle/PL45xH4oFEAWYqrD9)  
-- *Manuscript to be Extracted*: [Kieffer et al. (2013)](https://drive.google.com/file/d/1SOb6kzKWZyzNLRY--FrcDRdJSQulZcgq/)  
+- *Manuscript to be Extracted*: Kieffer, M. J., Vukovic, R. K., & Berry, D. (2013). Roles of attention shifting and inhibitory control in fourth‐grade reading comprehension. *Reading Research Quarterly*, *48*(4), 333-348. https://doi.org/10.1002/rrq.54 [[Quick link]](https://drive.google.com/file/d/1SOb6kzKWZyzNLRY--FrcDRdJSQulZcgq/)  
 - *Extracted Responses*: [GoogleSheet](https://docs.google.com/spreadsheets/d/1uQ-RgROwNAboQvsaKgVkv02whsFDE4fdHE5eW-vv7WU/)  
 
 #### Activity 2: Conducting a Meta-analysis  
@@ -116,6 +116,7 @@ Most of these packages have packages dependencies (i.e., other packages they use
 -- [example-meta-analysis-script.R](https://drive.google.com/file/d/1xT1ihvlKSt_-a-j1wPGpna-9FTAHWfjK/)  
 -- [example-meta-analysis-script.Rmd](https://drive.google.com/file/d/1eUm6YTlH3zCF1WmLO-gcFHi589aCGzNQ/)  
 - *Data file*: [ober_2020_ef_decoding.csv](https://drive.google.com/file/d/1YykZF5iP0U6003c9UJeSsK-9K4h0-i8F/)  
+- *Published manuscript with additional details about dataset*: Ober, T. M., Brooks, P. J., Homer, B. D., & Rindskopf, D. (2020). Executive functions and decoding in children and adolescents: A meta-analytic investigation. *Educational Psychology Review*, *32*, 735–763. https://doi.org/10.1007/s10648-020-09526-0   
 
 
 
@@ -154,31 +155,3 @@ Moher, D., Shamseer, L., Clarke, M., Ghersi, D., Liberati, A., Petticrew, M., ..
 ### Acknowledgements   
 Some project materials adapted from:  
 Kothe, E. (2016). Systematic reviews and meta-Analysis in behavioural medicine: A practical introduction to best practices. https://doi.org/10.17605/OSF.IO/6BK7B
-
-
-
-
-
-
-```{r}
-# the theory and rationale of meta-analysis
-# identifying and developing research questions appropriate for meta-analysis
-# creating and protocol for the systematic review and drafting a pre-registration
-# accessing and organizing citations
-# PRISMA procedure for screening articles (and tools for collaborative article screening)
-# procedures for data extraction and establishing inter-coder reliability
-# other resources for evaluating the quality of the systematic review
-
-#For the effect size calculation and moderator/meta-regression analysis, I can plan to give some demos that involve the use of two R packages (metafor, robumeta) for analyzing the data. I should be able to pull some toy data to use for the latter portion to get some hands-on experience running the analyses. If it would be of interest, I'd like to focus on two types of meta-analysis: one which focuses on correlations as effect size estimates, and the other which focuses on group mean differences as effect size estimates.
-
-
-```
-
-
-
-
-
-
-
-
-
