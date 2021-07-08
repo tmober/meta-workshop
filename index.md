@@ -28,6 +28,7 @@ July 8, 2021
     -   [Preferred Reporting Items for Systematic Reviews and
         Meta-Analyses
         (PRISMA)](#preferred-reporting-items-for-systematic-reviews-and-meta-analyses-prisma)
+        -   [Acknowledgements](#acknowledgements)
 
 # Getting Started
 
@@ -229,3 +230,10 @@ Petticrew, M., … & Stewart, L. A. (2015). Preferred reporting items for
 systematic review and meta-analysis protocols (PRISMA-P) 2015 statement.
 *Systematic Reviews*, *4*(1), 1-9.
 <https://doi.org/10.1186/2046-4053-4-1>
+
+### Acknowledgements
+
+Some project materials adapted from:  
+Kothe, E. (2016). Systematic reviews and meta-Analysis in behavioural
+medicine: A practical introduction to best practices.
+<https://doi.org/10.17605/OSF.IO/6BK7B>
