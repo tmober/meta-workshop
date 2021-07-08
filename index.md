@@ -32,10 +32,16 @@ July 8, 2021
 # Getting Started
 
 Before the workshop, please consider taking a moment to complete the
+<<<<<<< HEAD
 following steps:
 
 1.  Download the latest version of R statistical environment from the
     website here: <https://cran.cmm.msu.ru/> .
+=======
+following steps:  
+1. Download the latest version of R statistical environment from the
+website here: <https://cran.cmm.msu.ru/> .
+>>>>>>> fd765e89c3557e7be2eb250fb64643aaab515350
 
 2.  Though not required, you will probably find it helpful to also
     download RStudio:
