@@ -118,33 +118,34 @@ I2_statistic
 resid <- residuals(model_metafor_mv) %>%
   scale(center = FALSE, scale = TRUE)  # convert residuals to z-scores
 
-plot(resid, type="o", pch=19)
+plot(resid, type="p", pch=19)
 png(filename = "ResidualsPlot.png", 
     width = 800, height = 640, 
     pointsize = 12, res = 120)
-plot(resid, type="o", pch=19)
+plot(resid, type="p", pch=19)
+
 # Close off set par back to the original settings
 # dev.off()
 
 
 outliers_resid <- resid %>%
   cbind(ef_decod_data$Study) %>%            # bind study names for reference
-  subset(resid > 3.0 | resid < - 3.0)      # subset outliers
+  subset(resid > 3.0 | resid < - 3.0)       # subset outliers
 outliers_resid
 
-# Using Cook's distance (and create png)
+# Using Cook's distance
 cooks <- cooks.distance(model_metafor_mv)
-plot(cooks, type="o", pch=19)
+plot(cooks, type="p", pch=19)
 png(filename = "CooksDistancePlot.png", 
     width = 800, height = 640, 
     pointsize = 12, res = 120)
-plot(cooks, type="o", pch=19)
+plot(cooks, type="p", pch=19)
 # dev.off()
 
-# View outliers with Cooks > 3 * mean
+# View outliers with Cooks > 0.5
 outliers_cooks <- cooks %>% 
   cbind(ef_decod_data$Study) %>%           # bind study names for reference
-  subset(cooks > 3.0*mean(cooks))          # subset outliers
+  subset(cooks > 0.5)                      # subset outliers
 outliers_cooks
 
 # Create new dataframe with outliers removed

@@ -170,6 +170,8 @@ I2_statistic
 resid <- residuals(model_metafor_mv) %>%
   scale(center = FALSE, scale = TRUE)      # convert residuals to z-scores
 
+plot(resid, type="p", pch=19)
+
 outliers_resid <- resid %>%
   cbind(ef_decod_data$Study) %>%            # bind study names for reference
   subset(resid > 3.0 | resid < - 3.0)       # subset outliers
@@ -180,16 +182,13 @@ In this case, we actually do not appear to have any influential points based on 
 ## Using Cook's distance  
 ```{r, include = TRUE, echo = TRUE}
 cooks <- cooks.distance(model_metafor_mv)
-plot(cooks, type="o", pch=19)
-png(filename = "CooksDistancePlot.png", 
-    width = 800, height = 640, 
-    pointsize = 12, res = 120)
-plot(cooks, type="o", pch=19)
 
-# View outliers with Cooks > 3 * mean
+plot(cooks, type="p", pch=19)
+
+# View outliers with Cooks > 0.50
 outliers_cooks <- cooks %>% 
   cbind(ef_decod_data$Study) %>%           # bind study names for reference
-  subset(cooks > 3.0*mean(cooks))          # subset outliers
+  subset(cooks > 0.50)                     # subset outliers
 outliers_cooks
 
 # Create new dataframe with outliers removed
@@ -197,7 +196,7 @@ ef_decod_data_no_outliers <- ef_decod_data %>%
   cbind(cooks) %>%
   filter(cooks < 3.0*mean(cooks))
 ```
-It looks like we have quitea few influential points based on Cook's distance. Normally, we would want to double-check these and make sure they were extracted correctly. For now, we will proceed by excluding these from subsequent meta-regression analyses.  
+Once again, it looks we actually do no have any influential points based on Cook's Distance.  
 
 
 
